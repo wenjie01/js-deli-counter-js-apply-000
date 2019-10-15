@@ -26,12 +26,10 @@ function currentLine(katzDeliLine){
 
 
 function nowServing(line){
-  for (var i = 0; i < line.length; i++) {
-    if (line.length > 0){
-    return 'Currently serving ' + line[0] +'.'
-    line.shift();
-    }else{
-      return "There is nobody waiting to be served!"
-    }
+  if (line.length === 0){
+    return "There is nobody waiting to be served!"
+  }else{
+      return line[0];
+      line.shift();  
   }
 }
