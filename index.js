@@ -10,6 +10,7 @@ function currentLine(katzDeliLine){
   var string = '';
   var line = '';
   if (katzDeliLine.length >0){
+
     for (var i=0; i< katzDeliLine.length; i++){
       string =`${i+1}. ${katzDeliLine[i]}, `;
       line += string;
