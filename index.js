@@ -1,8 +1,24 @@
-var katzDeli = [];
-function takeANumber(katzDeli, name){
-  katzDeli.push(name)
-  return "Welcome, " + name + ". You are number "+ katzDeli.length +" in line.";
+var katzDeline = [];
+function takeANumber(katzDeline, name){
+  katzDeline.push(name)
+  return "Welcome, " + name + ". You are number "+ katzDeline.length +" in line.";
 }
+
+
+
+function currentLine(katzDeliLine){
+  var string = '';
+  if (katzDeliLine.length >0){
+    for (var i=0; i< katzDeliLine.length; i++){
+      string = string + katzDeliLine[i];
+      }
+    return "The line is currently: " + string
+  }else{
+    return "The line is currently empty."
+  }
+}; 
+
+
 
 function nowServing(line){
   for (var i = 0; i < line.length; i++) {
