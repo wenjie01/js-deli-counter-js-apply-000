@@ -15,7 +15,8 @@ function currentLine(katzDeliLine){
       line += string;
       }
     var newString = "The line is currently: " + line;
-    return newString.slice(0,-1);
+    var str=newString.slice(0,-1);
+    return str
   }else{
     return "The line is currently empty."
   }
