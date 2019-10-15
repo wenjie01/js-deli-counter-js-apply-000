@@ -14,7 +14,7 @@ function currentLine(katzDeliLine){
       string =`${i+1}. ${katzDeliLine[i]}`;
       line = line + string;
       }
-    return "The line is currently: " + string
+    return "The line is currently: " + line;
   }else{
     return "The line is currently empty."
   }
