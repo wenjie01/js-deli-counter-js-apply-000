@@ -31,5 +31,6 @@ function nowServing(line){
   }else{
       var servingLine = 'Currently serving '+line[0]+'.' ;
       line.shift();
+      return servingLine;
   }
 }
