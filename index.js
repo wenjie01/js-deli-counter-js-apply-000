@@ -8,9 +8,11 @@ function takeANumber(katzDeline, name){
 
 function currentLine(katzDeliLine){
   var string = '';
+  var line = '';
   if (katzDeliLine.length >0){
     for (var i=0; i< katzDeliLine.length; i++){
-      string = string + katzDeliLine[i];
+      string =`${i+1}. ${katzDeliLine[i]}`;
+      line = line + string;
       }
     return "The line is currently: " + string
   }else{
